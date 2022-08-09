@@ -22,6 +22,7 @@ public class MainPila {
     public static void main(String[] args) {
         Pila<Productos> pilaP = new Pila<>();
         Pila<Productos> pilaD = new Pila<>();
+        Pila<Productos> pilaI = new Pila<>();
         pilaP.apilar(new Productos("Carne", 2, 14000));
         pilaP.apilar(new Productos("Arroz", 4, 3000));
         pilaP.apilar(new Productos("Lentejas", 1, 5000));
@@ -31,10 +32,14 @@ public class MainPila {
         OperacionesPila Operador = new OperacionesPila();
         
          pilaD = Operador.pilaDuplicada(pilaP);
+         
+         pilaI = Operador.pilaInvertida(pilaP);
         
         System.out.println("Pila \n"+pilaP.toString());
         
         System.out.println("Pila Duplicada \n"+pilaD.toString());
+        
+        System.out.println("Pila Invertida \n"+pilaI.toString());
     }
     
 }
