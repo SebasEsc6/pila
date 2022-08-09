@@ -30,11 +30,11 @@ public class MainPila {
         
         OperacionesPila Operador = new OperacionesPila();
         
-        Operador.pilaDuplicada(pilaD);
+         pilaD = Operador.pilaDuplicada(pilaP);
         
         System.out.println("Pila \n"+pilaP.toString());
         
-        System.out.println("Pila \n"+pilaD.toString());
+        System.out.println("Pila Duplicada \n"+pilaD.toString());
     }
     
 }
